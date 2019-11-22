@@ -1,0 +1,207 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+@colorLight: hsl(210, 10%, 62%);
+@bgColorHtml: #424242;
+@bgColorLight:#949ea7;
+@border:2px;
+
+
+
+div {
+    display: block;
+}
+
+.row {
+    display: block;
+    width: 101.04166667%;
+    margin-left: -.52083333%;
+    margin-right: -.52083333%;
+}
+
+figure.figure.right {
+    float: right;
+    margin-left: 8px;
+}
+
+.outer-wrap-header {
+    background-color: @bgColorHtml;
+    padding-bottom: 22px;
+}
+
+.outer-wrap-footer {
+    background-color: @bgColorHtml;
+    padding-top: 24px;
+    padding-bottom: 22px;
+}
+
+.footer-column {
+    display: inline;
+    float: left;
+    width: 32.29166667%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+    border: @border;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.region-main {
+    display: inline;
+    float: left;
+    width: 75%;
+    margin-left: .52%;
+    margin-right: .52%;
+    margin-left: 8%;
+}
+
+.site-footer {
+    color: @colorLight;
+    text-align: center;
+}
+.region-footer {
+    display: inline;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+}
+
+.inner-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.rm-navbar {
+    position: relative
+}
+  
+.rm-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.rm-default li {
+    display: inline-block
+}
+
+.rm-default li li {
+    display: block;
+    min-width: 10em
+}
+
+.rm-default a {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 1em;
+    outline: 0
+}
+
+.rm-default ul {
+    position: absolute;
+    z-index: 9999;
+    left: -9999px
+}
+
+.rm-default ul.rm-show-submenu {
+    left: 0
+}
+
+.rm-default ul li {
+    box-shadow: 0 0 1px rgba(0, 0, 0, .4)
+}
+
+.rm-default ul ul {
+    left: -9999px
+}
+
+.rm-desktop ul {
+    background-color: inherit
+}
+
+.rm-desktop li {
+    position: relative
+}
+
+.rm-desktop li a:hover,
+.rm-desktop li.current-menu-item a {
+    text-decoration: underline
+}
+
+.rm-desktop li a {
+    color: inherit;
+    background-color: inherit
+}
+
+.rm-desktop li a:hover {
+    color: inherit;
+    background-color: inherit
+}
+
+.rm-desktop li:hover>ul {
+    left: 0
+}
+
+.rm-desktop li:hover>ul.rm-submenu-level-1 {
+    left: auto;
+    left: 30%
+}
+
+.rm-desktop li .rm-submenu-button {
+    display: none
+}
+
+kbd {
+	background-color: #ddd;
+	padding: 4px 6px;
+	border-radius: 2px;
+}
+
+address {
+	line-height: 1.5;
+	padding-left: 10px;
+}
+
+dl dt {
+	font-weight: 700;
+}
+
+dl dd {
+	margin-left: 0;
+}
+
+
+button {
+	padding: 5px 15px;
+	border: none;
+}
+
+button:focus {
+	outline: none;
+	border: none;
+}
+
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}

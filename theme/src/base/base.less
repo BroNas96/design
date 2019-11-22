@@ -1,0 +1,108 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #424242;
+@bgColorBody: #3D3936;
+@colorLight: hsl(210, 10%, 62%);
+@fontFamilyBody: serif;
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorLight;
+    background-color: @bgColorBody;
+    font: 100.01%/1 @fontFamilyBody;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+    letter-spacing: normal;
+    line-height: inherit;
+}
+
+body,
+html {
+    overflow-x:hidden;
+}
+
+footer {
+    float: left;
+    align-content: center;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: disc;
+	font-size: 17px;
+	line-height: 1.59;
+}
+
+a { 
+    text-decoration: underline;
+    color: @colorLight;
+}
+
+a:hover,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {  
+	font-size: 32px; 
+	line-height: 1.13; 
+}
+
+h3 {  
+	font-size: 26px;  
+}
+
+h4 {  
+	font-size: 22px;  
+}
+
+h5 {  
+	font-size: 20px;  
+}
+
+h6 {  
+	font-size: 18px;  
+}
+
+img {
+	border: none;
+    max-width: 100%;
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+}
+      
+img:hover {
+    opacity: 1;
+}
+
+strong {
+	font-weight: 500;
+}

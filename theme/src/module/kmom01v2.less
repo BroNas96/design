@@ -1,0 +1,248 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+/*
+/*--------------------*/
+/* BASIC TYPOGRAPHY */
+/*--------------------*/
+
+body,
+html {
+    overflow-x:hidden;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+    color: #3D3936;
+    background-color:#FCECDD;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: disc;
+	font-size: 17px;
+	line-height: 1.59;
+}
+
+a { 
+	text-decoration: none;
+	color: #2f2f2f;  
+}
+
+a:hover,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {  
+	font-size: 32px; 
+	line-height: 1.13; 
+}
+
+h3 {  
+	font-size: 26px;  
+}
+
+h4 {  
+	font-size: 22px;  
+}
+
+h5 {  
+	font-size: 20px;  
+}
+
+h6 {  
+	font-size: 18px;  
+}
+
+img {
+	border: none;
+	max-width: 100%;
+}
+
+strong {
+	font-weight: 500;
+}
+
+code {
+	background-color: #ee6e73;
+	border-radius: 2px;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+pre code {
+	background-color: transparent;
+	color: #333;
+}
+
+del{
+	text-decoration-color: #ee6e73;
+}
+
+.rm-navbar {
+    position: relative
+}
+  
+.rm-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.rm-default li {
+    display: inline-block
+}
+
+.rm-default li li {
+    display: block;
+    min-width: 10em
+}
+
+.rm-default a {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 1em;
+    outline: 0
+}
+
+.rm-default ul {
+    position: absolute;
+    z-index: 9999;
+    left: -9999px
+}
+
+.rm-default ul.rm-show-submenu {
+    left: 0
+}
+
+.rm-default ul li {
+    box-shadow: 0 0 1px rgba(0, 0, 0, .4)
+}
+
+.rm-default ul ul {
+    left: -9999px
+}
+
+.rm-desktop ul {
+    background-color: inherit
+}
+
+.rm-desktop li {
+    position: relative
+}
+
+.rm-desktop li a:hover,
+.rm-desktop li.current-menu-item a {
+    text-decoration: underline
+}
+
+.rm-desktop li a {
+    color: inherit;
+    background-color: inherit
+}
+
+.rm-desktop li a:hover {
+    color: inherit;
+    background-color: inherit
+}
+
+.rm-desktop li:hover>ul {
+    left: 0
+}
+
+.rm-desktop li:hover>ul.rm-submenu-level-1 {
+    left: auto;
+    left: 30%
+}
+
+.rm-desktop li .rm-submenu-button {
+    display: none
+}
+
+kbd {
+	background-color: #ddd;
+	padding: 4px 6px;
+	border-radius: 2px;
+}
+
+address {
+	line-height: 1.5;
+	padding-left: 10px;
+}
+
+dl dt {
+	font-weight: 700;
+}
+
+dl dd {
+	margin-left: 0;
+}
+
+blockquote {
+	background-color: #f8f8f8;
+	border-radius: 0 4px 4px 0;
+	padding: 5px 15px;
+	
+}
+
+blockquote p {
+	margin-top: 10px;
+}
+
+button {
+	padding: 5px 15px;
+	border: none;
+}
+
+button:focus {
+	outline: none;
+	border: none;
+}
+
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
